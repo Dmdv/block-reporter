@@ -1,4 +1,18 @@
-# GO-MICRO: Missing documentation
+# Block-reporter
+
+This is a demo application which demonstrates:  
+- How to bootstrap `go-micro`
+- How to read the latest blocks from Ethereum
+- How to bootstrap the development environment with `Postgres` and `MongoDB`
+- How to use `NATS`
+- How to create PUB/SUB event architecture with `go-micro`
+- How to save all data to `MongoDB`
+
+### References
+https://github.com/Dmdv/micro-client  
+https://github.com/Dmdv/micro-server  
+
+## GO-MICRO: Missing documentation
 
 ##### Prerequisites
 ```shell
@@ -110,8 +124,4 @@ MICRO_AUTH_SECRET - Account secret used for client authentication
 MICRO_AUTH_NAMESPACE - Namespace for the services auth account, go.micro  
 MICRO_AUTH_PUBLIC_KEY - Public key for JWT auth (base64 encoded PEM)  
 MICRO_AUTH_PRIVATE_KEY - Private key for JWT auth (base64 encoded PEM)  
-MICRO_CONFIG - The source of the config to be used to get configuration  
-
-
-# block-reporter
-Latest blocks monitoring and persisting in the MongoDB
+MICRO_CONFIG - The source of the config to be used to get configuration
