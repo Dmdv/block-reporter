@@ -7,7 +7,7 @@ prerequisites:
 #	@curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
 #	@chmod 700 get_helm.sh
 #	@./get_helm.sh
-	@go install go-micro.dev/v4/cmd/micro@a40f6e8fae19018ead6778a2887c0daf970a9882
+	@go install go-micro.dev/v4/cmd/micro@latest
 
 .PHONY: init
 init:
