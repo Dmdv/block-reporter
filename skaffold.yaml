@@ -1,0 +1,17 @@
+apiVersion: skaffold/v2beta25
+kind: Config
+metadata:
+  name: micro-server
+build:
+  artifacts:
+  - image: micro-server
+    context: .
+    docker: {}
+deploy:
+  kubectl:
+    manifests:
+    - resources/*.yaml
+profiles:
+- name: Dima
+  build:
+    cluster: {}

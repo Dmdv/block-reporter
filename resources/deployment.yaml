@@ -1,0 +1,24 @@
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: block-reporter
+  labels:
+    app: block-reporter
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: block-reporter
+  template:
+    metadata:
+      labels:
+        app: block-reporter
+    spec:
+      containers:
+      - name: block-reporter
+        image: block-reporter:latest
+        envFrom:
+        - configMapRef:
+            name: block-reporter-env

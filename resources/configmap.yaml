@@ -1,0 +1,11 @@
+---
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: block-reporter-env
+data:
+  MICRO_SERVER: grpc
+  MICRO_REGISTRY: kubernetes
+  MICRO_SERVER_NAME: block-reporter
+  MICRO_SERVER_VERSION: latest
